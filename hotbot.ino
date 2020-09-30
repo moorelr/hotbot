@@ -4,7 +4,16 @@
 
 // This is a test comment
 
-#include <Adafruit_MAX31856.h>
+/*
+  Jonny recommends that I do the following:
+  - Start using Geany
+  - Learn about Ctags
+  - Update my Arduino IDE (even though this can be donne via Geany)
+  - Install totrise git (?) and link with github account
+*/
+
+#include <Adafruit_MAX31856.h> // Library for the thermocouple
+// https://github.com/adafruit/Adafruit_MAX31856/blob/master/Adafruit_MAX31856.h
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <Adafruit_ST7735.h> // Hardware-specific library for ST7735
 
@@ -43,6 +52,10 @@ Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
 String tft_text("NA");
 
 void setup_tft() {
+  /*
+      Initialize the screen
+  */
+  
   Serial.println(F("Beginning ST7735 TFT initialization"));
   pinMode(TFT_RST, OUTPUT);
   digitalWrite(TFT_RST, LOW);
