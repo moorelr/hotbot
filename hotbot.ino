@@ -2,6 +2,8 @@
 // This example demonstrates continuous conversion mode using the
 // DRDY pin to check for conversion completion.
 
+// This is a test comment
+
 #include <Adafruit_MAX31856.h>
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <Adafruit_ST7735.h> // Hardware-specific library for ST7735
