@@ -19,6 +19,7 @@
 #define FURNACE_CIRCUIT A1
 
 // set up tft definitions
+// This is related to the screen
 #define TFT_CS        9
 #define TFT_DC        8
 #define TFT_RST       -1 // if -1, short tft reset to artuino reset pin
